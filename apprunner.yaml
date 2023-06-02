@@ -1,0 +1,14 @@
+version: 1.0
+runtime: nodejs16
+build:
+  commands:    
+    build:
+      - npm install --production                                  
+run:                              
+  command: npm start
+  secrets:
+    - name: NGROK_AUTHTOKEN
+    # For AWS Systems Manager:
+    #  value-from: "arn:aws:ssm:<region>:<aws_account_id>:parameter/<parameter_name>"
+    # For AWS Secrets Manager:
+    #  value-from: "arn:aws:secretsmanager:<region>:<aws_account_id>:secret:<secret_name>"

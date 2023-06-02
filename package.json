@@ -1,0 +1,17 @@
+{
+  "name": "ngrok-js-serverless",
+  "version": "0.1.0",
+  "description": "A sample Node.js app using ngrok and AWS App Runner",
+  "engines": {
+    "node": "18"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "@ngrok/ngrok": "^0.*"
+  },
+  "devDependencies": {
+  }
+}
